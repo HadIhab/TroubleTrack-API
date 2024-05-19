@@ -3,4 +3,5 @@
 # others
 .env
 PRIV_KEY.pem
+.gitignore
 
