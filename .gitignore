@@ -1,0 +1,6 @@
+# Node.js dependencies
+/node_modules
+# others
+.env
+PRIV_KEY.pem
+
