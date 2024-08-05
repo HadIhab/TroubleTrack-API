@@ -13,8 +13,6 @@ import passport from './config/passport.js';
 
 
 const app = express();
-const port = process.env.PORT || 3000;
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 dotenv.config();
@@ -26,6 +24,8 @@ defineAssociations(sequelize);
     resave: false,
     saveUninitialized: false
 }));*/
+
+const port = process.env.PORT || 3000;
 
 app.use(passport.initialize());
 //app.use(passport.session());
